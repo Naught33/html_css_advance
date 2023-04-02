@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            height: 100vh;
+            position: relative;
+            align-content: center;
+            justify-content: center;
+            background: black;
+        }
+        .space{
+            height: 50px;
+        }
+        form{
+            margin: 12px;
+        }
+        .container{
+            border: 1px white solid;
+            height: 50vh;
+            border-radius: 12px;
+            display: inline-block;
+            
+        }
+        input{
+            border: 1px solid white;
+            border-radius: 6px;
+            padding: 25px;
+            background: black;
+            color: white;
+            font-family: Arial;
+            margin: 20px;
+        }
+        input :hover{
+            border: 1px solid rgb(7, 194, 219);
+        }
+        label{
+            font-size: 17px;
+            font-family: Arial;
+            font-style: bold;
+        }
+        
+        .login button{
+            
+            height: 60px;
+            width: 130px;
+            background: rgb(7, 194, 219);
+            border: 1px rgb(7, 194, 219);
+            border-radius: 12px;
+            color: white;
+            font-size: 13px;
+            font-family: Arial;
+            font-style: bold;
+            font-weight: 100;
+           margin-left: 100px;
+            margin-bottom: 5px;
+            animation: anim_bright_revert 1s;
+            
+
+        }
+       
+
+        .login :hover{
+            animation: anim_bright 1s;
+            box-shadow: 0 0 10px 10px rgb(7, 194, 219);
+            color: black;
+            font-size: 17px;
+            
+        }
+
+        @keyframes anim_bright{
+            from{
+                box-shadow: 0 0 0px 0px rgb(7, 194, 219);
+                color: white;
+                font-size: 13px;
+                
+            }
+            to{
+                box-shadow: 0 0 10px 10px rgb(7, 194, 219);
+                color: black;
+                font-size: 17px;
+            }
+            
+        }
+        @keyframes anim_bright_revert{
+            from{
+                
+                box-shadow: 0 0 10px 10px rgb(7, 194, 219);
+                color: black;
+                font-size: 17px;
+            }
+            to{
+                box-shadow: 0 0 0px 0px rgb(7, 194, 219);
+                color: white;
+                font-size: 13px;
+            }
+            
+        }
+
+    </style>
+    <title>pro css</title>
+</head>
+<body>
+    <div class="space">
+
+    </div>
+    <div class="container">
+
+<form action="get" style="color: white;">
+    <div class="column">
+    <label for="username">Username: </label>
+    <input type="text" placeholder="username" name="username">
+    <label for="pass">Password: </label>
+    <input type="password" placeholder="password" name="pass">
+    </div>
+    <div class="column">
+    <label for="username">Last name: </label>
+    <input type="text" placeholder="last name" name="lastname">
+    <label for="pass">Confirm Password: </label>
+    <input type="password" placeholder="confirm password" name="pass_2">
+    </div>
+</form>
+
+    <div class="login">
+        <button>
+            Log In
+        </button>
+    </div>    
+    </div>
+</body>
+</html>
